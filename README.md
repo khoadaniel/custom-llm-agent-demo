@@ -39,4 +39,4 @@ Agent, remove the baguette please."
 ![Pay with Cards](img/example_payment_card.png)
 
 ## 🚀 Give it a try
-You can try the PoC Demo [here](http://18.199.129.28:8882/).
+You can try the PoC Demo [here](http://18.199.129.28:8002/).
