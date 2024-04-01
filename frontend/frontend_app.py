@@ -43,17 +43,17 @@ st.sidebar.write(
     I am based in Berlin, Germany and I am interested in new technologies and how they can be implemented to solve real-world problems.
     If you have any questions, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/khoadaniel/).""")
 
-# get HOST from env var
 
 HOST = os.getenv("HOST", "local")
-if HOST=="local":
-    st.button("Wake up the Agent")
-    st.write("🎤️ Please speak now, the agent will know when you are done.")
-    converted_text = speech_to_text()
-    # Feed the conversation to the agent to make POST requests
-    custom_agent.make_requests(converted_text)
+if HOST == "local":
+    if st.button("Wake up the Agent"):
+        st.write("🎤️ Please speak now, the agent will know when you are done.")
+        converted_text = speech_to_text()
+        # Feed the conversation to the agent to make POST requests
+        custom_agent.make_requests(converted_text)
 else:
-    st.markdown("*No audio device detected. Please use the type-in box below to enter your order instead ⤵️*")
+    st.markdown(
+        "*No audio device detected. Please use the type-in box below to enter your order instead ⤵️*")
     manual_input_text = st.chat_input("Enter the input here:")
 
     if manual_input_text is not None:
