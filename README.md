@@ -1,5 +1,7 @@
 # 🥖 A practical use case of custom LLM Agents: Hands-free POS 🚀
 
+[![Custom LLM agent](https://img.youtube.com/vi/4dHBJDix9Is/0.jpg)](https://www.youtube.com/watch?v=4dHBJDix9Is "Click to watch the video")
+
 
 ## 🧀 The Inspiration
 I am a fan of the tasty Käsedings at Zeit für Brot and I've spent quite a bit of time hanging out at their busy Eberswalder spot. It's where my interest in the tasty breads collides with the reality of waiting in line.
