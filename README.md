@@ -4,7 +4,7 @@
 ## 🧀 The Inspiration
 I am a fan of the tasty Käsedings at Zeit für Brot and I've spent quite a bit of time hanging out at their busy Eberswalder spot. It's where my interest in the tasty breads collides with the reality of waiting in line.
 
-I noticed and hypothesized that, to maintain hygiene, cashiers don't directly handle the food. There would be one cashier and one another staff that works in pair to deal with each customer. The cashier only manage orders and payments, leaving food handling to their peers.
+I noticed and hypothesized that, to maintain hygiene, cashiers don't directly handle the food. There would be one cashier and one other staff working in a pair to deal with customers. The cashiers only manage orders and payments, leaving food handling to their peers.
 
 ➡️ This observation sparked an idea: What if we could make the ordering and payment process more efficient, enhancing customer satisfaction, streamlining staff workflow, and ultimately boosting Zeit für Brot's revenue (_sorry for the buzzwords_)?
 
@@ -20,12 +20,13 @@ This solution proposes integrating a custom LLM agent into the Point of Sale (PO
 ➡️ **Example 2 (more complex with a mixed-up conversation between 2 customers and real orders with the staff):** <br>
 
 ```markdown
-"Do you want to get an espresso and two cinnamon rolls? I don't know?
-OK, I'll decide then. I'll get a baguette, a cappuccino, and two cheesecakes.
-Agent, add a baguette, a cappuccino, and two cheesecakes please.
-Sorry I changed my mind, I won't get the baguette.
-Agent, remove the baguette please.
-Agent, please proceed to payment with cards please."
+- Customer A: Do you want to get an espresso and two cinnamon rolls?
+- Customer B: I don’t know.
+- Customer A: OK, I’ll decide then. I’ll get a baguette, a cappuccino, and two cheesecakes.
+- Staff: Agent, add a baguette, a cappuccino, and two cheesecakes, please.
+- Customer A: Sorry I changed my mind, I won’t get the baguette.
+- Staff: Agent, remove the baguette, please.
+- Staff: Agent, proceed to payment by card, please.
 ```
 
 ![Example 2](img/example_2.png)
