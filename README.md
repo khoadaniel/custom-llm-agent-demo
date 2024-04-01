@@ -1,4 +1,4 @@
-# 🥖 Effortless Hands-free Checkout: A POS Upgrade with LLM Agent 🚀
+# 🥖 A practical use case of custom LLM Agents: Hands-free POS 🚀
 
 
 ## 🧀 The Inspiration
