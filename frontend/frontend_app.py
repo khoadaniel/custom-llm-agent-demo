@@ -6,7 +6,7 @@ from my_langchain.agent import LangChainCustomAgent
 custom_agent = LangChainCustomAgent()
 
 st.set_page_config(
-    page_title="Hand-free POS",
+    page_title="Custom LLM Agent",
     page_icon="🤖",
     layout="wide"
 )
