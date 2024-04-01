@@ -7,6 +7,7 @@ from langchain.agents import AgentExecutor
 import requests
 import streamlit as st
 from dotenv import load_dotenv
+import pyttsx3
 
 
 class LangChainCustomAgent():
@@ -24,6 +25,13 @@ class LangChainCustomAgent():
                         {text}
                     </div>
                 """
+
+    def text_to_speech(self, text: str):
+
+        # Initialize the engine
+        engine = pyttsx3.init()
+        engine.say(text)
+        engine.runAndWait()
 
     def make_requests(self, conversation: str):
         llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
@@ -157,3 +165,5 @@ class LangChainCustomAgent():
         st.markdown(self.color_text(f"""🤖 {agent_output["output"]}""",
                                     color="#fcf89d"),
                     unsafe_allow_html=True)
+
+        self.text_to_speech(agent_output["output"])
