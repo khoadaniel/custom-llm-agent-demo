@@ -24,19 +24,21 @@ This solution proposes to integrate a custom LLM agent directly into the Point o
 OK, I'll decide then. I'll get a baguette, a cappuccino, and two cheese cakes.
 Agent, add a baguette, a cappuccino, and two cheese cakes please.
 Sorry I changed my mind, I won't get the baguette.
-Agent, remove the baguette please."
+Agent, remove the baguette please.
+Agent, please proceed to payment with cards please."
 ```
 
 ![Example 2](img/example_2.png)
 
+The API log shows the agent's actions in response to the staff's speech.
 
-- LLM Agent Action: The agent processes this speech, generating an API request to register the order.
+![API log](img/api_log.png)
+
+- The agent processes this speech, generating an API request to register the order.
 
 - In case of correction: If there's a change in the order, the staff can proceed with: "Agent, remove one cinnamon roll." The agent will adjust the order accordingly.
 
-💳 Seamless Payment: Upon finalizing the order, "Agent, proceed to payment with QR code" prompts the agent to initiate the payment process, creating a smooth end-to-end transaction.
-
-![Pay with Cards](img/example_payment_card.png)
+- Upon finalizing the order, "Agent, proceed to payment with QR codes / cards please" prompts the agent to initiate the payment process, creating a smooth end-to-end transaction.
 
 ## 🚀 Give it a try
 You can try the PoC Demo [here](http://18.199.129.28:8002/).
