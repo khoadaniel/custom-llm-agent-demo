@@ -41,6 +41,7 @@ def speech_to_text():
 
         except Exception as e:
             st.markdown(
-                """Sorry, I cannot understand, please try again.\n{e}""")
+                f"""Sorry, an error occured, the agent cannot listen to you: {e}""")
+            done = True
 
     return converted_text
