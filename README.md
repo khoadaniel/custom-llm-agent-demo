@@ -1,7 +1,5 @@
 # 🥖 A practical use case of custom LLM Agents: Hands-free POS 🚀
 
-[![Custom LLM agent](https://img.youtube.com/vi/4dHBJDix9Is/0.jpg)](https://www.youtube.com/watch?v=4dHBJDix9Is "Click to watch the video")
-
 
 ## 🧀 The Inspiration
 I am a fan of the tasty Käsedings at Zeit für Brot and I've spent quite a bit of time hanging out at their busy Eberswalder spot. It's where my interest in the tasty breads collides with the reality of waiting in line.
@@ -44,4 +42,8 @@ The API log shows the agent's actions in response to the staff's speech.
 - Upon finalizing the order, "Agent, proceed to payment with QR codes / cards please" prompts the agent to initiate the payment process, creating a smooth end-to-end transaction.
 
 ## 🚀 Give it a try
-You can try the PoC Demo [here](http://18.199.129.28:8002/).
+- You can try the PoC Demo [here](http://18.199.129.28:8002/).
+
+- Watch the demo here:
+
+[![Custom LLM agent](https://img.youtube.com/vi/4dHBJDix9Is/0.jpg)](https://www.youtube.com/watch?v=4dHBJDix9Is "Click to watch the video")
