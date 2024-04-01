@@ -24,14 +24,14 @@ st.sidebar.image(
 st.sidebar.write(
     """
 ## 🧀 The Inspiration
-I am a fan of the tasty Käsedings at Zeit für Brot and I've spent quite a bit of time hanging out at their busy Eberswalder spot. It's where my interest for the tasty breads collides with the reality of waiting in line.
-I noticed and hypothesized that, to maintain hygiene, cashiers don't directly handle the food. There would be one cashier and one another staff that works in pair to deal with each customer. The cashier only manage orders and payments, leaving food handling to their peers.
-\n➡️ This observation sparked an idea: What if we could make the ordering and payment process more efficient, enhancing customer satisfaction, streamlining staff workflow, and ultimately boosting Zeit für Brot's revenue (_sorry for the buzz words_)?
+ am a fan of the tasty Käsedings at Zeit für Brot and I've spent quite a bit of time hanging out at their busy Eberswalder spot. It's where my interest in the tasty breads collides with the reality of waiting in line..
+I noticed and hypothesized that, to maintain hygiene, cashiers don't directly handle the food. There would be one cashier and one other staff working in a pair to deal with customers. The cashiers only manage orders and payments, leaving food handling to their peers.
+\n➡️ This observation sparked an idea: What if we could make the ordering and payment process more efficient, enhancing customer satisfaction, streamlining staff workflow, and ultimately boosting Zeit für Brot's revenue (sorry for the buzzwords)?
 
 ## 💡 The Solution: The Integration of the LLM-agent
-This solution proposes to integrate a custom LLM agent directly into the Point of Sale (POS) system. The agent will translate the staff's orders into API requests, registering items in the POS system without manual entry.
+This solution proposes integrating a custom LLM agent into the Point of Sale (POS) system. The agent will translate the staff's orders into API requests, registering items in the POS system without manual entry.
 
-\nThis is an open-source project and you can find the code on [GitHub](https://github.com/khoadaniel/home-assist).
+\nThis is an open-source project and you can find the codes on [GitHub](https://github.com/khoadaniel/home-assist).
 """)
 
 
