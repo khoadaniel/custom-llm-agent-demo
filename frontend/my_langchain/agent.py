@@ -1,3 +1,4 @@
+import os
 from langchain_openai import ChatOpenAI
 from langchain.agents import tool
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -47,7 +48,7 @@ class LangChainCustomAgent():
             """
 
             # Make a POST request to the FastAPI endpoint
-            url = "http://localhost:8889/add"
+            url = "http://localhost:8881/add"
 
             st.markdown(self.color_text(f"""🔌 Add items to the order by making a POST request to: {url}""",
                                         color="#95ed96"),
@@ -81,7 +82,7 @@ class LangChainCustomAgent():
             """
 
             # Make a POST request to the FastAPI endpoint
-            url = "http://localhost:8889/remove"
+            url = "http://localhost:8881/remove"
 
             st.markdown(self.color_text(f"""🔌 Remove items from the order by making a POST request to: {url}""",
                                         color="#ffaaa8"),
@@ -111,7 +112,7 @@ class LangChainCustomAgent():
             """
 
             # Make a POST request to the FastAPI endpoint
-            url = "http://localhost:8889/pay"
+            url = "http://localhost:8881/pay"
 
             st.markdown(self.color_text(f"""🔌 Proceed to payment by making a POST request to: {url}""",
                                         color="#95ed96"),
@@ -165,5 +166,7 @@ class LangChainCustomAgent():
         st.markdown(self.color_text(f"""🤖 {agent_output["output"]}""",
                                     color="#fcf89d"),
                     unsafe_allow_html=True)
-
-        self.text_to_speech(agent_output["output"])
+        
+        HOST = os.getenv("HOST", "local")
+        if HOST == "local":
+            self.text_to_speech(agent_output["output"])

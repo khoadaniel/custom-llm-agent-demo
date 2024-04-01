@@ -40,4 +40,4 @@ async def add(request_json: PaymentMethod):
 
 
 if __name__ == "__main__":
-    uvicorn.run("backend_app:app", host="0.0.0.0", port=8889, reload=True)
+    uvicorn.run("backend_app:app", host="0.0.0.0", port=8881, reload=True)
