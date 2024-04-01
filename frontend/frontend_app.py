@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 
-st.title("Welcome to my LLM-powered hand-free POS Demo")
+st.title("LLM-powered Hands-free POS Demo")
 
 st.sidebar.markdown("**About this project**")
 
