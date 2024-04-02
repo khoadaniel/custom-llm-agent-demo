@@ -10,8 +10,11 @@ I noticed and hypothesized that, to maintain hygiene, cashiers don't directly ha
 
 ## 💡 The Solution: The Integration of an LLM-agent
 This solution proposes integrating a custom LLM agent into the Point of Sale (POS) system. The agent will translate the staff's orders into API requests, registering items in the POS system without manual entry.
+
 ![Bakery Illustration](img/bakery.png)
 _Image by the Author_
+
+<br>
 
 ## Workflow Simplified:
 
