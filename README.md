@@ -10,8 +10,14 @@ I noticed and hypothesized that, to maintain hygiene, cashiers don't directly ha
 
 ## 💡 The Solution: The Integration of an LLM-agent
 This solution proposes integrating a custom LLM agent into the Point of Sale (POS) system. The agent will translate the staff's orders into API requests, registering items in the POS system without manual entry.
+![Bakery Illustration](img/bakery.png)
+_Image by the Author_
 
 ## Workflow Simplified:
+
+![LLM Agent Architecture](img/custom_llm_agent.png)
+_Image by the Author_
+
 👩‍💼 Staff-Customer Interaction: A staff member receives an order from a customer. He communicates with the LLM agent through his headset. The staff member can engage in conversation with the customer without needing to deactivate the headset, allowing for a seamless interaction. The LLM agent listens to the entire conversation, filtering out irrelevant chatter and focusing on the important details. This is facilitated by the use of specific “agent” and “please” cues (signposting), which enables the LLM agent to distinguish between casual conversation and a direct request for assistance.
 
 **Example:**
@@ -26,10 +32,12 @@ This solution proposes integrating a custom LLM agent into the Point of Sale (PO
 ```
 
 ![Example 2](img/example_2.png)
+_Image by the Author_
 
 The API log shows the agent's actions in response to the staff's speech.
 
 ![API log](img/api_log.png)
+_Image by the Author_
 
 - The agent processes this speech, generating an API request to register the order.
 
